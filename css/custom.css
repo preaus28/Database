@@ -1,0 +1,149 @@
+body, container {
+	font-family: Arial, Helvetica, sans-serif;
+	background-image: linear-gradient(to bottom, #ced0d4b7, #dfdfdf, #ffffff);
+}
+
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+input[type=text],input[type=number], input[type=mail], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  border-radius: 10px 10px 10px 10px;
+}
+input:focus {
+  outline: none;
+}
+
+label {
+  display: inline-block;
+}
+
+input[type=submit] {
+
+	width: 90px;
+	background: none repeat scroll 0 0 black;
+	border-radius: 10px 10px 10px 10px;
+	border-style: solid;
+	border-width: 1px;
+	box-shadow: 1px 1px 3px #333333;
+	height: 33px;
+	cursor: pointer;
+	text-align: center;
+	/* display: block; */
+	color: white;
+	text-transform: uppercase;
+	font-weight: 600;
+	margin: 10px 0;
+	transition: 0.5s;
+}
+
+input[type=submit]:hover {
+  background-color: white;
+  color: black;
+}
+
+input[type=reset] {
+  float: right;
+  clear: both;
+}
+
+input[type=reset] {
+	width: 90px;
+	box-shadow: 1px 1px 3px #333333;
+  background-color: white;
+ 	border: 10px;
+  height: 33px;
+	border-radius: 10px;
+	color: black; 
+ 	text-transform: uppercase;
+  font-weight: 600;
+  margin: 10px 0;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+input[type=reset]:hover, input[type=reset]:focus {
+  color: black;
+}
+
+input[type=reset]:active {
+  background-color: black;
+  color: white;
+  outline: 10px 10px 10px 10px;
+}
+
+input[type=radio] {
+  border-radius: 80%;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #999;
+  transition: 0.2s all linear;
+  margin-right: 5px;
+  position: relative;
+  top: 4px;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+	border-radius: 10px;
+	background-image: linear-gradient(to bottom, #ced0d4b7, #dfdfdf, #ffffff );
+	padding: 20px;
+  margin: auto;
+}
+
+.row {
+  align-items: center;
+  display: flex;
+  margin-top: 5px;
+}
+
+.col-25 {
+  width: 18%;
+  padding: 2px 0;
+}
+
+.col-75 {
+  width: 82%;
+}
+
+legend {
+	background-color: #333333;
+	background-image: linear-gradient(to bottom, green, rgb(15, 148, 44),rgb(24, 195, 61));
+	color: white;
+	box-shadow: 1px 1px 3px #333333;
+	padding: 5px 10px;
+}
+
+fieldset {
+	border-radius: 10px 10px 10px 10px;
+	background-image: linear-gradient(to bottom, #f6f6f6, #ffffff, #fffdfd );
+  box-shadow: 1px 1px 3px #333333;	
+}
+
+#back-to-home {
+  background-color: #333333;
+  padding: 10px 8px;
+  border-radius: 10px;
+  margin: 10px auto;
+  color: white;
+}
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
